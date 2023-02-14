@@ -1,0 +1,5 @@
+.vscode
+a.exe
+a.out
+*.o
+nanotekspice
