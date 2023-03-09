@@ -17,4 +17,5 @@ class Circuit {
         void display();
     private:
         std::map<std::string, std::unique_ptr<nts::IComponent>> components;
+        int tick = 0;
 };

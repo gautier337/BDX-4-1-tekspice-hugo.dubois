@@ -7,9 +7,10 @@
 
 NAME =	nanotekspice
 
-SRC = 	Include/AComponent.cpp			\
-		Include/main.cpp				\
-		Include/Circuit.cpp				\
+SRC = 	Src/AComponent.cpp			\
+		Src/main.cpp				\
+		Src/Circuit.cpp				\
+		Src/FileParser.cpp
 
 OBJ	=	$(SRC:.cpp=.o)
 
@@ -26,8 +27,6 @@ clean:
 f:
 	make fclean
 	make -j
-	clear
-	./nanotekspice
 
 fclean: clean
 	rm -f $(NAME)
